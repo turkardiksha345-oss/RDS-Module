@@ -25,8 +25,6 @@ resource "aws_db_instance" "my_rds" {
   publicly_accessible    = false
   skip_final_snapshot    = true
 
-  multi_az               = false   # ✅ optional but good practice
-
   tags = {
     Name = "my-db"
   }
