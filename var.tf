@@ -1,23 +1,30 @@
 variable "engine" {
+  description = "Database engine"
+  type        = string
 }
 
 variable "engine_version" {
+  description = "Engine version"
+  type        = string
 }
 
 variable "instance_class" {
+  description = "RDS instance type"
+  type        = string
 }
 
 variable "db_name" {
+  description = "Database name"
+  type        = string
 }
 
 variable "username" {
+  description = "DB username"
+  type        = string
 }
 
 variable "password" {
-}
-
-variable "subnet_ids" {
-}
-
-variable "security_group_id" {
+  description = "DB password"
+  type        = string
+  sensitive   = true
 }
