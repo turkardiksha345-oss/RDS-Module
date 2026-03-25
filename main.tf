@@ -20,7 +20,7 @@ resource "aws_db_instance" "my_rds" {
   password               = var.password
 
   db_subnet_group_name   = aws_db_subnet_group.my_db_subnet.name
-  vpc_security_group_ids = [var.security_group_id]   
+   
 
   publicly_accessible    = false
   skip_final_snapshot    = true
