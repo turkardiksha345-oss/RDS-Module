@@ -1,3 +1,8 @@
+variable "env" {
+  description = " Pass Environment "
+  type        = string
+}
+
 variable "engine" {
   description = "Database engine"
   type        = string
