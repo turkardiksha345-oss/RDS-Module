@@ -18,7 +18,7 @@ data "aws_security_group" "default" {
 
 
 resource "aws_db_subnet_group" "my_db_subnet" {
-  name       = "my-rds-subnet-group"
+  name       = "my-rds-subnet-group-1"
   subnet_ids = data.aws_subnets.default.ids   # ✅ using default subnets
 
   tags = {
